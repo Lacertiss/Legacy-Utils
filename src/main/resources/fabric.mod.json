@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "legacyutils",
+	"version": "${version}",
+	"name": "Legacy Utils",
+	"description": "Quality of life improvements for PVPLegacy in general.\n\nStill in development, so expect some bugs.",
+	"authors": [
+		"Lacertis"
+	],
+	"contact": {
+		"sources": "https://github.com/Lacertiss/Legacy-Utils"
+	},
+	"license": "MIT",
+	"icon": "assets/legacy-utils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"de.lacertis.LegacyUtilsClient"
+		],
+		"fabric-datagen": [
+			"de.lacertis.LegacyUtilsDataGenerator"
+		],
+		"modmenu": [
+			"de.lacertis.client.config.LegacyConfiguration"
+		]
+	},
+	"mixins": [
+		"legacy-utils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ">=1.21.0 <1.21.5",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*",
+		"modmenu": "*"
+	},
+	"custom": {
+		"modmenu:api": true
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "text.autoconfig.legacyutils.title": "LegacyUtils Configuration",
+  "text.autoconfig.legacyutils.category.appearance": "Appearance",
+  "text.autoconfig.legacyutils.option.primaryColor": "Primary Color",
+  "text.autoconfig.legacyutils.option.primaryColor.@Tooltip": "Choose the primary color for mod"
+}
