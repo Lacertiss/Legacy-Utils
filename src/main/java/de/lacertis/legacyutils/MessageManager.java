@@ -1,4 +1,4 @@
-package de.lacertis.client;
+package de.lacertis.legacyutils;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

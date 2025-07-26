@@ -1,14 +1,14 @@
-package de.lacertis.client.config;
+package de.lacertis.legacyutils.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.gui.screen.Screen;
 
-public class LegacyConfiguration implements ModMenuApi {
+public class Configuration implements ModMenuApi {
 
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return (Screen parent) -> AutoConfig.getConfigScreen(LegacyModConfig.class, parent).get();
+        return (Screen parent) -> AutoConfig.getConfigScreen(ModConfig.class, parent).get();
     }
 }

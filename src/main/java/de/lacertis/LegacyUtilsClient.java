@@ -1,6 +1,6 @@
 package de.lacertis;
 
-import de.lacertis.client.config.LegacyModConfig;
+import de.lacertis.legacyutils.config.ModConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
@@ -20,7 +20,7 @@ public class LegacyUtilsClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        AutoConfig.register(LegacyModConfig.class, Toml4jConfigSerializer::new);
+        AutoConfig.register(ModConfig.class, Toml4jConfigSerializer::new);
 
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
             String host = extractHost(handler.getConnection().getAddress());

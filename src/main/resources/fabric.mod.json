@@ -21,7 +21,7 @@
 			"de.lacertis.LegacyUtilsDataGenerator"
 		],
 		"modmenu": [
-			"de.lacertis.client.config.LegacyConfiguration"
+			"de.lacertis.legacyutils.config.Configuration"
 		]
 	},
 	"mixins": [
